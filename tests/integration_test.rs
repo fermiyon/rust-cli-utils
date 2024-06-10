@@ -1,4 +1,3 @@
-extern crate rust_cli_utils;
 use rust_cli_utils::colors::{Color, ColorString};
 
 #[test]
