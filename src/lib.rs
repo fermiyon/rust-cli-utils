@@ -17,6 +17,8 @@ use std::io::{BufRead, BufReader};
 /// # Examples
 ///
 /// ```rust
+/// use rust_cli_utils::read_stdin;
+///
 /// fn main() {
 ///     let input = read_stdin();
 ///     println!("You entered: {}", input);
