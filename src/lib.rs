@@ -2,15 +2,18 @@
 //! # Examples
 //! ```rust
 //! use rust_cli_utils::read_stdin;
-//! fn main() {
-//!     let input = read_stdin();
-//!     println!("You entered: {}", input);
-//! }
+//!
+//! let input = read_stdin();
+//! println!("You entered: {}", input);
+//!
 //! ```
 //! # Panics
 //! The read_stdin function will panic if it fails to read a line from standard input.
 
 use std::io::{BufRead, BufReader};
+
+pub mod colors;
+pub mod config;
 
 /// Reads a line from standard input and returns it as a `String`.
 ///
@@ -19,10 +22,10 @@ use std::io::{BufRead, BufReader};
 /// ```
 /// use rust_cli_utils::read_stdin;
 ///
-/// fn main() {
-///     let input = read_stdin();
-///     println!("You entered: {}", input);
-/// }
+///
+/// let input = read_stdin();
+/// println!("You entered: {}", input);
+///
 /// ```
 
 pub fn read_stdin() -> String {
