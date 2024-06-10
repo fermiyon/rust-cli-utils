@@ -1,7 +1,7 @@
 //! This is a library that provides utilities for CLI
 //! # Examples
 //! ```rust
-//! use cli_utils::read_stdin;
+//! use rust_cli_utils::read_stdin;
 //! fn main() {
 //!     let input = read_stdin();
 //!     println!("You entered: {}", input);
@@ -16,7 +16,7 @@ use std::io::{BufRead, BufReader};
 ///
 /// # Examples
 ///
-/// ```rust
+/// ```
 /// use rust_cli_utils::read_stdin;
 ///
 /// fn main() {
