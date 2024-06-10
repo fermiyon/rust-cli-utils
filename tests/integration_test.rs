@@ -1,0 +1,18 @@
+extern crate rust_cli_utils;
+use rust_cli_utils::colors::{Color, ColorString};
+
+#[test]
+fn test_red_coloring() {
+    let mut color_string = ColorString {
+        color: Color::Red,
+        string: "Red".to_string(),
+        colorized: "".to_string(),
+    };
+    color_string.paint();
+    assert_eq!(color_string.colorized, "\x1b[31mRed\x1b[0m");
+}
+
+#[test]
+fn test_simple() {
+    assert_eq!(1, 1);
+}
