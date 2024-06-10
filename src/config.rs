@@ -45,3 +45,13 @@ impl Logging {
         }
     }
 }
+
+impl Default for Logging {
+    fn default() -> Self {
+        Self {
+            enabled: false,
+            level: LogLevel::Info,
+            destination: LogOutput::Stdout,
+        }
+    }
+}
